@@ -9,7 +9,7 @@ This is the backend service for a chat application built with **NestJS**, suppor
 - 🧑 User registration and login with JWT authentication
 - 👥 Contact request system (send/accept requests)
 - 💬 Messaging system with pagination and rate limiting
-- 🔔 Notification system using Kafka
+- 🔔 Notification system
 - 📄 Swagger API documentation
 - 🧾 Winston-based logging to console and file
 
