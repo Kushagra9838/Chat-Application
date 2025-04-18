@@ -20,7 +20,6 @@ This is the backend service for a chat application built with **NestJS**, suppor
 - **Framework**: NestJS
 - **Database**: MongoDB (via Mongoose)
 - **Auth**: JWT
-- **Message Queue**: Kafka
 - **Logger**: Winston
 - **Docs**: Swagger
 
@@ -30,8 +29,8 @@ This is the backend service for a chat application built with **NestJS**, suppor
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/chat-application-backend.git
-cd chat-application-backend
+git clone https://github.com/your-username/chat-application.git
+cd chat-application
 ```
 
 ### 2. Install Dependencies
@@ -39,11 +38,9 @@ cd chat-application-backend
 npm install
 ```
 
-### 3. Setup MongoDB, Kafka, and gRPC
+### 3. Setup MongoDB
 Ensure the following services are running:
-- MongoDB (default: `mongodb://localhost:27017/chatapp`)
-- Kafka (default: `localhost:9092`)
-- gRPC user service (default: `localhost:50051`)
+- MongoDB (default: `mongodb://localhost:27017/chatApplication`)
 
 ### 4. Environment Configuration
 Create a `.env` file in the root folder with the following content:
@@ -60,7 +57,7 @@ EMAIL=your_email@example.com
 NODEMAILER_PASSWORD=your_app_password
 
 # MongoDB
-MONGO_URI=mongodb://localhost:27017/chatapp
+MONGO_URI=mongodb://localhost:27017/chatApplication
 ```
 
 > ⚠️ Do NOT commit your `.env` file to version control. Add it to `.gitignore`.
