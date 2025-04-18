@@ -29,8 +29,8 @@ This is the backend service for a chat application built with **NestJS**, suppor
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/chat-application.git
-cd chat-application
+git clone https://github.com/Kushagra9838/Chat-Application.git
+cd Chat-Application
 ```
 
 ### 2. Install Dependencies
