@@ -1,4 +1,3 @@
-// src/logger/logger.service.ts
 import { Injectable, LoggerService } from '@nestjs/common';
 import * as winston from 'winston';
 import * as path from 'path';
@@ -19,8 +18,8 @@ export class AppLogger implements LoggerService {
       transports: [
         new winston.transports.Console(),
         new winston.transports.File({
-          filename: path.join(__dirname, '../../logs/application.log'), // Change log file path if necessary
-          level: 'info',  // Adjust the level if needed (info, warn, error, etc.)
+          filename: path.join(__dirname, '../../logs/application.log'),
+          level: 'info', 
         }),
       ],
     });
